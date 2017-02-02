@@ -1,24 +1,17 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+**Prerequirements**
 
-Things you may want to cover:
 
-* Ruby version
+1. You need to have installed Oracle(R) Java(TM) 8, OpenJDK(TM) or IBM J9 to run Neo4j Server. Please see http://docs.neo4j.org/ for Neo4j Server installation instructions.
 
-* System dependencies
 
-* Configuration
 
-* Database creation
+**Start commands**
 
-* Database initialization
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+1. run `bundle install`
+2. run `rake neo4j:install[community-latest,development]`
+3. run `rake neo4j:migrate`
+4. run `rake neo4j:start`
+5. run `rails s`
